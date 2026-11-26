@@ -22,4 +22,4 @@ checkEntry(LINE, LIMIT);
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 mkdirSync(out, { recursive: true });
 writeFileSync(join(out, 'entry.txt'), LINE, 'utf8');
-// No trailing newline: the file is exactly the roast, nothing more.
+// No trailing newline: entry.txt holds exactly the roast, byte for byte.
